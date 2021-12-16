@@ -1,0 +1,54 @@
+package worbook;
+
+public class wb2_3 {
+
+	public static void main(String[] args) {
+	
+		int numOfApples = 0;
+		int numOfCustomers=0;
+		double profit=0;
+		
+		
+		double price=0;
+		int sold =0;
+		
+		System.out.println("You picked 500 apples from an apple orchard");
+		//update number of apples
+		numOfApples = 500;
+		
+		System.out.println("Time for business! You're selling each apple for 40 cents. ");
+		//update price of apples
+		price=.40;
+	
+		
+		System.out.println("One customer walked in, he bought 4 apples!");
+		//update number of customers, number of sold appples and profit
+		numOfCustomers++;
+		numOfApples-=4;
+		profit += 4* price;
+	
+			
+		System.out.println("Another customer walked in, he bought 20 apples!");
+		//update number of customers, number of sold appples and profit
+		numOfCustomers++;
+		numOfApples-=20;
+		profit += 20* price;
+	
+		System.out.println("Another customer walked in, he bought 200 apples!");
+		//update number of customers, number of sold appples and profit
+		numOfCustomers++;
+		numOfApples-=200;
+		profit += 200* price;
+	
+		
+		
+		//print profit
+		System.out.println("So far, you made $" + profit);
+		//print number of customers
+		System.out.println(numOfCustomers + " customers love your apples!") ;
+		//print apples remaining
+		System.out.println("You have " +(numOfApples) +"apples left. Well sell more tomorrow");
+		
+	}
+
+}
