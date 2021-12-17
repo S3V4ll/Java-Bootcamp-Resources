@@ -11,33 +11,33 @@ public class Survey {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Welcome!!! Thank you for taking the survey");
 
-		System.out.println("What is your name? ");
+		System.out.println("\nWhat is your name? ");
 		String name = scan.nextLine();
 		counter++;
 		
-		System.out.println("How much money do you spend on coffee? ");
+		System.out.println("\nHow much money do you spend on coffee? ");
 		double coffeePrice = scan.nextDouble();
 		counter++;
 		
-		System.out.println("How much money do you spend on fastfood? ");
+		System.out.println("\nHow much money do you spend on fastfood? ");
 		double foodPrice = scan.nextDouble();
 		counter++;
 		
-		System.out.println("How many times in a week do you buy coffee ? ");
+		System.out.println("\nHow many times in a week do you buy coffee ? ");
 		int coffeeAmount = scan.nextInt();
 		counter++;
 		
-		System.out.println("How many times do you buy in a week fast food ? ");
+		System.out.println("\nHow many times do you buy in a week fast food ? ");
 		int foodAmount = scan.nextInt();
 		counter++;
 		
 		//always close scanners avoid memory leak
 		scan.close();
 
-		System.out.println("\n Thank you " + name +  " for answering all " 
+		System.out.println("\nThank you " + name +  " for answering all " 
 		+ (counter)+ " questions");
 		
-		System.out.println("Your fastfood expenses are " +(foodPrice/coffeePrice) +" times your coffee expenses.");
+		System.out.println("\nYour fastfood expenses are " +(foodPrice/coffeePrice) +" times your coffee expenses.");
 		System.out.println("You spend $"+(coffeeAmount*coffeePrice) +" for coffee " );
 		System.out.println("You spend $"+(foodAmount*foodPrice) +" for fastfood " );
 		
