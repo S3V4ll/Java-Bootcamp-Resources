@@ -1,0 +1,74 @@
+package ScannerWrkBk2_5;
+
+import java.util.Scanner;
+
+public class SignUp {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Welcome to JavaGram! Let's sign you up.");
+        
+
+        //Task 1 - Using Scanner, ask the user questions
+
+        //Ask for their first name.
+        System.out.println("\nPlease enter your first name: ");
+        String firstName =scan.nextLine();
+        
+        //Ask for their last name.
+        System.out.println("\nPlease enter your last name: ");
+        String lastName =scan.nextLine();
+        
+        
+        //Ask: how old are you?
+        System.out.println("\nHow old are you? ");
+        int age=scan.nextInt();
+        
+        //this is added when there is a different type of scan type in between nextLine (in this case in between nextLine is nextInt
+        scan.nextLine();
+        
+        //Ask them to make a username.
+        System.out.println("\nPlease enter your user name: ");
+        String userName =scan.nextLine();
+        
+        
+        //Ask what city they live in.
+        System.out.println("\nPlease enter your what city you live in: ");
+        String city =scan.nextLine();
+        
+        //Ask what country that's from.
+        System.out.println("\nPlease enter what country that's from: ");
+        String country=scan.nextLine();
+
+        //Task 2 - Print their information. 
+
+        System.out.println("Thank you for joining JavaGram!");
+
+        //Print their information like so:
+
+        //Your information:
+            //        First Name: Rayan
+            //        Last Name: Slim
+            //        Age: 27
+            //        Username: monotonic_relu
+            //        City: Ottawa
+            //        Country: Canada
+            //
+        
+        System.out.println("\nYour information:");
+        
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+        System.out.println("Age: " + age);
+        System.out.println("User Name: " + userName);
+        System.out.println("City: " + city);
+        System.out.println("Country: " + country);
+         
+
+
+        //close scanner. It's good practice :D ! 
+
+        scan.close();
+    }
+}
